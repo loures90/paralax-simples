@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PARALAX</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		@font-face{
+			font-family: "lionking";
+			src: url('lion_king.ttf');
+		}
+		html, body{
+			margin: 0px;
+			width: 100%;
+			height: 100%;
+			font-family: "lionking";
+		}
+
+		.conteudo{
+			background-color:white;
+			color: #777;
+			text-align: justify;
+			padding:50px 80px;
+		}
+		h2{
+			text-transform: uppercase;
+			color: #111;
+			text-align: center;
+
+		}
+		#caixa1, #caixa2, #caixa3, #caixa4{
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed; /* responsável pelo efeito paralax, a img não desce com o scroll*/
+			background-position: center;
+			background-size: cover;
+			position: relative;
+			
+		}
+		.centro{
+			position: absolute;
+			top:50%;
+			width: 100%;
+			text-align: center;
+		}
+		.texto{
+			padding: 10px 30px;
+			font-size: 1.5em;
+			color:white;
+			background:grey;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+		}
+		#caixa1{
+			background-image: url(imagens/imagem1.jpg);
+			opacity: 0.8;
+
+
+		}
+		#caixa2{
+			background-image: url(imagens/imagem2.jpg);
+			opacity: 0.8;
+		}
+		#caixa3{
+			background-image: url(imagens/imagem3.jpg);
+			opacity: 0.8;
+		}
+		#caixa4{
+			background-image: url(imagens/imagem4.jpg);
+			opacity: 0.8;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div id="caixa1">
+		<div class="centro">
+			<span class ="texto">Lorem ipsum dolor sit amet</span>
+		</div>
+		
+	</div>
+
+	<div class="conteudo">
+		<h2>Título 1</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis elit id leo fermentum, ac dapibus diam iaculis. Maecenas aliquam elit id nibh molestie, a euismod justo sodales. Quisque posuere consectetur suscipit. Suspendisse eget pellentesque orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam pretium purus in placerat aliquet. Morbi lobortis tempus diam at fringilla. Pellentesque purus mauris, volutpat vel feugiat at, ultrices vel orci. Sed gravida interdum nulla, non pharetra diam hendrerit tempus. Donec sodales porta ornare. Sed pulvinar sem libero, scelerisque dignissim augue ultricies volutpat. Nulla tincidunt pellentesque orci quis molestie. Nunc tincidunt neque ligula, et posuere diam fringilla eu. Proin consectetur semper neque, eu viverra odio aliquam quis. Pellentesque dui leo, cursus sit amet augue ac, congue rutrum nulla. 
+		</p>
+	</div>
+
+	<div id="caixa2">
+		<div class="centro">
+			<span class ="texto">Lorem ipsum dolor sit amet</span>
+		</div>
+	</div>
+
+	<div id="caixa3">
+		<div class="centro">
+			<span class ="texto">Lorem ipsum dolor sit amet</span>
+		</div>
+	</div>
+	<div id="caixa4">
+		<div class="centro">
+			<span class ="texto">Lorem ipsum dolor sit amet</span>
+		</div>
+	</div>
+
+</body>
+</html>
